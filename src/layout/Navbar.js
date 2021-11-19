@@ -3,7 +3,7 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <ul className="navbar">
+        <ul className="d-flex ">
             <li className="mx-3">
                 <Link to="/">Acceuil</Link>
             </li>
