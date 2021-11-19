@@ -15,7 +15,7 @@ function SearchForm() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label>Recherche :
+                <label className="">Recherche :
                     <input type="text" value={research.value} onChange={handleChange} />
                 </label>
                 <input type="submit" value="Rechercher" />

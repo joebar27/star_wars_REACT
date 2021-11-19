@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Categorie from "../components/categorie/Categorie";
 
 function Home() {
     let [categories, setCategories] = useState([]);
@@ -18,7 +19,6 @@ function Home() {
             });
     }, []);
 
-    console.log(categories);
     if (error) {
         return (
             <div className="alert alert-danger">
@@ -35,19 +35,16 @@ function Home() {
         );
     }
 
-    function cat() {
-        const categorie = cat;
-        for (const cat in categories) {
-            console.log(cat);
-        }
-    }
-    
     return (
         <section className="d-flex flex-wrap justify-content-center align-items-center">
-            <h2>
+            <h2 className="col-12 my-5">
                 Selectionnez la catégorie sur laquel vous voulez en savoir plus:
             </h2>
-            <div>{categorie}</div>
+            <div className="d-flex flex-wrap justify-content-center align-items-center">
+                {Object.keys(categories).map((categorie) => (
+                    <Categorie categorie={categorie} />
+                ))}
+            </div>
         </section>
     );
 }
