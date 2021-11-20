@@ -3,12 +3,12 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <ul className="d-flex ">
+        <ul className="d-flex">
             <li className="mx-3">
-                <Link to="/">Acceuil</Link>
+                <Link className="App-Navbar" to="/">Acceuil</Link>
             </li>
             <li className="mx-3">
-                <Link to="/reseach">Recherche</Link>
+                <Link className="App-Navbar" to="/reseach">Recherche</Link>
             </li>
         </ul>
     )

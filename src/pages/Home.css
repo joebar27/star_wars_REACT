@@ -1,0 +1,10 @@
+div {
+    border-radius: 10px;
+}
+
+h2 {
+    color: #b6efff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}

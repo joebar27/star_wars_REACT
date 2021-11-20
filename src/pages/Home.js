@@ -1,3 +1,5 @@
+import "./Home.css";
+
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Categorie from "../components/categorie/Categorie";
@@ -37,12 +39,12 @@ function Home() {
 
     return (
         <section className="d-flex flex-wrap justify-content-center align-items-center">
-            <h2 className="col-12 my-5">
-                Selectionnez la catégorie sur laquel vous voulez en savoir plus:
+            <h2 className="col-6 text-align-center p-2 my-5">
+                Voici les catégories sur laquel vous voulez en savoir plus:
             </h2>
             <div className="d-flex flex-wrap justify-content-center align-items-center">
-                {Object.keys(categories).map((categorie) => (
-                    <Categorie categorie={categorie} />
+                {Object.keys(categories).map((categorie, i) => (
+                    <Categorie key={i} cat={categorie} />
                 ))}
             </div>
         </section>

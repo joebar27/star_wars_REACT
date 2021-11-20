@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import SearchResult from "../research/SearchResult";
 
-function SearchResult(props) {
-
+function People(props) {
+    const url = "https://swapi.dev/api/people/";
     let [categorie, setCategorie] = useState(props.categorie);
     let [error, setError] = useState(null);
     let [isLoaded, setIsLoaded] = useState(false);
@@ -10,7 +11,7 @@ function SearchResult(props) {
 
     useEffect(() => {
         axios
-            .get("https://swapi.dev/api/people/")
+            .get(url)
             .then(function (response) {
                 setCategorie(response.data);
                 setIsLoaded(true);
@@ -35,23 +36,12 @@ function SearchResult(props) {
             </div>
         );
     }
-
     return (
-        <div>            
-            <li>{categorie.name}</li>            
-            <li>{categorie.birth_year}</li>
-            <li>{categorie.eye_color}</li>
-            <li>{categorie.hair_color}</li>
-            <li>{categorie.height }</li>
-            <li>{categorie.mass }</li>
-            <li>{categorie.skin_color }</li>
-            <li>{categorie.homeworld }</li>
-            {/* <li>{categorie.films }</li> */}
-            {/* <li>{categorie.species }</li> */}
-            {/* <li>{categorie.starships }</li> */}
-            {/* <li>{categorie.vehicles }</li> */}
+        <div>
+            <h1>page des peoples</h1>
+            {/* <SearchResult id={props.id} /> */}
         </div>
-    )
+    );
 }
 
-export default SearchResult;
+export default People;
