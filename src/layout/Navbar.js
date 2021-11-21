@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
+import "./Navbar.css"
+import { NavLink } from "react-router-dom";
 import React from 'react'
 
 function Navbar() {
     return (
-        <ul className="d-flex">
+        <ul className="Navbar d-flex justify-content-center">
             <li className="mx-3">
-                <Link className="App-Navbar" to="/">Acceuil</Link>
+                <NavLink className="Navbar" to="/">Acceuil</NavLink>
             </li>
             <li className="mx-3">
-                <Link className="App-Navbar" to="/reseach">Recherche</Link>
+                <NavLink className="Navbar" to="/reseach">Recherche</NavLink>
             </li>
         </ul>
     )

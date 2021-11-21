@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import SearchResult from "../research/SearchResult";
 
 function People(props) {
-    const url = "https://swapi.dev/api/people/";
+    const url = "https://swapi.dev/api/";
     let [categorie, setCategorie] = useState(props.categorie);
     let [error, setError] = useState(null);
     let [isLoaded, setIsLoaded] = useState(false);
@@ -39,7 +39,7 @@ function People(props) {
     return (
         <div>
             <h1>page des peoples</h1>
-            {/* <SearchResult id={props.id} /> */}
+            <SearchResult id={props.id} />
         </div>
     );
 }

@@ -1,0 +1,15 @@
+.header {
+    background-image: url(/src/img/StarWars-Squadrons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 25vh;
+    /* color: #282c34; */
+    color: #b6efff;
+    font-weight: bolder;
+}
+
+h1, p {
+    background-color: rgba(40, 44, 52, 0.7);
+    border-radius: 5px;
+}

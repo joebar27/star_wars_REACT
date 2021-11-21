@@ -2,25 +2,6 @@
     text-align: center;
 }
 
-.App-header {
-    background-image: url(/src/img/StarWars-Squadrons.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 25vh;
-    color: #282c34;
-    font-weight: bolder;
-}
-.App-Navbar {
-    text-decoration: none;
-    font-size: 2em;
-    color: #b6efff;
-}
-
-.App-link {
-    color: #b6efff;
-}
-
 .App-footer {
     background-color: #282c34;
     min-height: 5vh;
@@ -29,8 +10,8 @@
 
 main {
     width: 100vw;
-    height: 70vh;
-    background-image: url(/src/img/ESO_540-31_pillars.jpg);
+    min-height: 70vh;
+    background-image: url(/src/img/ciel-etoile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -1,13 +1,15 @@
+import "./ResearchPage.css"
 import React from "react";
 import SearchForm from "../components/research/SearchForm";
 import SearchResult from "../components/research/SearchResult";
 
 function Research(props) {
    console.log(props.research)
+   console.log(props.categorie)
     return (
         <div className=" d-flex flex-column col-12 justify-content-center align-items-center">
             <h2 className="my-3">
-                Ici vous pouvez chercher par "ID"
+                Ici vous pouvez chercher par "ID" parmis la categorie : {props.categorie}
             </h2>
             <p className="col-10 mt-3">
                 Si vous n'avez pas choisi de categorie sur la page d'acceuil il

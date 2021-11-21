@@ -1,0 +1,12 @@
+.Navbar {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #b6efff;
+}
+
+@media screen and (min-width: 992px) {
+    .Navbar {
+        font-size: 1.5em;
+    }
+}

@@ -1,13 +1,13 @@
 import "./App.css";
 
 import Header from "./layout/Header";
-import Footer from "./layout/Footer";
 import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
 
 import { Routes, Route } from "react-router-dom";
 
-import Research from "./pages/Research";
 import Home from "./pages/Home";
+import Research from "./pages/ResearchPage";
 
 import People from "./components/categorie/People";
 import Planets from "./components/categorie/Planets";
@@ -25,12 +25,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/reseach" element={<Research />} />
-                    <Route path="/people" element={<People />} />
-                    <Route path="/planets" element={<Planets />} />
-                    <Route path="/films" element={<Films />} />
-                    <Route path="/species" element={<Species />} />
-                    <Route path="/vehicles" element={<Vehicles />} />
-                    <Route path="/starships" element={<Starships />} />
+                    <Route path="/reseach/people" element={<People />} />
+                    <Route path="/reseach/planets" element={<Planets />} />
+                    <Route path="/reseach/films" element={<Films />} />
+                    <Route path="/reseach/species" element={<Species />} />
+                    <Route path="/reseach/vehicles" element={<Vehicles />} />
+                    <Route path="/reseach/starships" element={<Starships />} />
                 </Routes>
             </main>
             <Footer />
