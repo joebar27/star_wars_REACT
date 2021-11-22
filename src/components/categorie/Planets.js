@@ -3,7 +3,7 @@ import React from 'react'
 function Planets() {
     return (
         <div>
-            page des planetes
+            <h1 className="result mt-5">Section en construction</h1>
         </div>
     )
 }

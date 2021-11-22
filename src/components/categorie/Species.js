@@ -3,7 +3,7 @@ import React from 'react'
 function Species() {
     return (
         <div>
-            page des particularités
+            <h1 className="result mt-5">Section en construction</h1>
         </div>
     )
 }

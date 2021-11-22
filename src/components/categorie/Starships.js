@@ -3,7 +3,7 @@ import React from 'react'
 function Starships() {
     return (
         <div>
-            page des vaisseaux spatiaux
+            <h1 className="result mt-5">Section en construction</h1>
         </div>
     )
 }
