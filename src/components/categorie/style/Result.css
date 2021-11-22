@@ -1,0 +1,29 @@
+.result{
+    background-color: rgba(40, 44, 52, 0.7);
+    border-radius: 10px;
+    color: rgb(216, 205, 105);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.result li {    
+    list-style: none;    
+}
+
+@media screen and (min-width: 425px) {
+    .result{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .result{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .result{
+        font-size: 3em;
+    }
+}

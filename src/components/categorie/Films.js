@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Planets() {
+function Films() {
     return (
         <div>
-            page des planetes
+            page des films
         </div>
     )
 }
 
-export default Planets
+export default Films

@@ -1,0 +1,29 @@
+div {
+    border-radius: 10px;    
+}
+
+h2 {
+    font-size: 1em;
+    color: #b6efff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 425px) {
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    h2 {
+        font-size: 3em;
+    }
+}

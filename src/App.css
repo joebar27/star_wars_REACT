@@ -1,19 +1,18 @@
 .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 25vh;
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+    text-align: center;
 }
 
 .App-footer {
-  background-color: #282c34;
-  min-height: 5vh;
-  color: white;
+    background-color: #282c34;
+    min-height: 5vh;
+    color: #b6efff;
+}
+
+main {
+    width: 100vw;
+    min-height: 70vh;
+    background-image: url(/src/img/ciel-etoile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

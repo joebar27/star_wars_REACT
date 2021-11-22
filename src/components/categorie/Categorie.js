@@ -1,14 +1,18 @@
+import "././style/Categorie.css";
 import React from "react";
-import Research from "../../pages/Research";
+import { Link } from "react-router-dom";
 
 function Categorie(props) {
-    
-    function ResearchCat() {
+    const categorie = props.cat;
 
-    }
     return (
-        <div className="col-3 border m-3 p-2 alert-dark" onClick={ResearchCat}>
-            <h3>{props.categorie}</h3>
+        <div
+            id={categorie}
+            className="col-5 col-lg-3 border m-2 p-3 m-md-3 p-md-4 p-lg-5 bg-img"
+        >
+            <Link to={`/` + categorie}>
+                <h3>{categorie.toUpperCase()}</h3>
+            </Link>
         </div>
     );
 }

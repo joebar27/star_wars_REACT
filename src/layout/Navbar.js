@@ -1,17 +1,24 @@
-import { Link } from "react-router-dom";
-import React from 'react'
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
+import React from "react";
 
 function Navbar() {
     return (
-        <ul className="d-flex ">
-            <li className="mx-3">
-                <Link to="/">Acceuil</Link>
-            </li>
-            <li className="mx-3">
-                <Link to="/reseach">Recherche</Link>
-            </li>
-        </ul>
-    )
+        <nav>
+            <ul className="Navbar d-flex justify-content-center">
+                <li className="mx-3">
+                    <NavLink className="Navbar" to="/">
+                        Acceuil
+                    </NavLink>
+                </li>
+                <li className="mx-3">
+                    <NavLink className="Navbar" to="/reseach">
+                        Recherche
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
+    );
 }
 
-export default Navbar
+export default Navbar;

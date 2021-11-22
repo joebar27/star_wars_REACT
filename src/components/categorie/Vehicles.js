@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Planets() {
+function Vehicles() {
     return (
         <div>
-            page des planetes
+            page des véhicules
         </div>
     )
 }
 
-export default Planets
+export default Vehicles
