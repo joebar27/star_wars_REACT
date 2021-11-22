@@ -25,12 +25,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/reseach" element={<Research />} />
-                    <Route path="/reseach/people" element={<People />} />
-                    <Route path="/reseach/planets" element={<Planets />} />
-                    <Route path="/reseach/films" element={<Films />} />
-                    <Route path="/reseach/species" element={<Species />} />
-                    <Route path="/reseach/vehicles" element={<Vehicles />} />
-                    <Route path="/reseach/starships" element={<Starships />} />
+                    <Route path="/people" element={<People search={false}/>} />
+                    <Route path="/planets" element={<Planets search={false} />} />
+                    <Route path="/films" element={<Films search={false} />} />
+                    <Route path="/species" element={<Species search={false} />} />
+                    <Route path="/vehicles" element={<Vehicles search={false} />} />
+                    <Route path="/starships" element={<Starships search={false} />} />
                 </Routes>
             </main>
             <Footer />

@@ -46,3 +46,10 @@ h3 {
 a {
     text-decoration: none;
 }
+
+@media screen and (min-width: 2500px) {
+    h3 {
+        font-size: 2.5em;
+        margin: 1em;
+    }
+}
